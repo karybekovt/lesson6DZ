@@ -6,8 +6,7 @@ public class Main {
         Boss boss = new Boss();
         boss.setHealth(1000);
         boss.setDamage(50);
-        Weapon wpn = new Weapon("Огнестрельное оружие", "Дробовик");
-        boss.setWeapon(wpn);
+        boss.setWeapon(new Weapon("Огнестрельное оружие", "Дробовик"));
 
         System.out.println("Здоровье Босса: " + boss.getHealth());
         System.out.println("Урон Босса: " + boss.getDamage());
